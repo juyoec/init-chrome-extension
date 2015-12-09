@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.css">
+	<style>
+		BODY {width : 650px; min-height:650px;}
+	</style>
+	<script src="../../lib/require.js"></script>
+	<script src="../requireConfig.js"></script>
+	<script src="controller.js"></script>
+	<title>helper</title>
+</head>
+<body>
+	<div class="container" ng-controller="CoupangProductController">
+		<div class="page-header">
+			<div></div>
+		</div>
+		<div class="alert alert-{{alert.type || 'warning'}}" role="alert" ng-if="alert.visible">
+			<strong>test</strong> test 중입니다.
+		</div>
+		<div class="progress" ng-if="loading.visible">
+			<div class="progress-bar progress-bar-striped active" role="progressbar" style="width: 100%">
+				<span class="sr-only">헬퍼 테스트 </span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
